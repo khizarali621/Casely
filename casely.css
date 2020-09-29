@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Opensans, Roboto, Helvetica;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.692)), url(imgs/bg-default.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    grid-template-rows: 100vh 10vh;
+    overflow: hidden;
+    /* min-width: 100rem; */
+}
+
+.header {
+    position: relative;
+    display: grid;
+    grid-template-rows: 95vh;
+    justify-items: center;
+    align-content: center;
+}
+
+.subheader {
+    /* border: 1px solid red; */
+    width: 90%;
+    display: grid;
+    grid-template-rows: 14vh 60vh 10vh;
+    align-content: space-between;
+
+}
+
+.subheader .nav {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 20% 10%;
+    justify-content: space-between;
+}
+
+.subheader .nav .nav1 {
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.subheader .nav .nav1 img{
+position: relative;
+width: 60%;
+height: 50%;
+}
+
+
+.subheader .nav .nav2 {
+    /* border: 1px solid; */
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+
+/*                                                 NAV                                                          */
+
+.subheader .header1 {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+}
+
+.subheader .header1 .header1-a {
+    /* border: 1px solid red; */
+    height: 100%;
+    color: white;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+
+}
+
+.subheader .header1 .header1-a h1 {
+    font-family: "Segoe UI", Opensans, Roboto, Helvetica;
+    font-size: 5.2rem;
+    border-bottom: 1px solid rgb(143, 142, 142);
+    padding: 0.7rem 0.1rem;
+    width: 100%;
+
+
+}
+
+.subheader .header1 .header1-a p {
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.subheader .header1 .header1-a h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
+/*  NEON */
+
+
+
+.subheader .header1 .header1-a a {
+    position: relative;
+    /* padding: 15px 30px; */
+    padding: 0.7rem 2.5rem;
+    /* color: #2196f3; */
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: 0.2s;
+    margin: 2rem 0rem;
+    border: 0.1rem solid white;
+}
+
+.subheader .header1 .header1-a a:hover {
+    /* color: #255784; */
+    color: rgb(136, 131, 131);
+    border: none;
+    /* background: #2196f3; */
+    background: white;
+    /* box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; */
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    transition-delay: 1s;
+}
+
+.subheader .header1 .header1-a a span {
+    position: absolute;
+    display: block;
+}
+
+.subheader .header1 .header1-a a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    /* background: linear-gradient(90deg, transparent, #2196f3); */
+    background: linear-gradient(90deg, transparent, white);
+
+}
+
+.subheader .header1 .header1-a a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.subheader .header1 .header1-a a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    /* background: linear-gradient(270deg, transparent, #2196f3); */
+    background: linear-gradient(270deg, transparent, white);
+
+}
+
+.subheader .header1 .header1-a a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.subheader .header1 .header1-a a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    /* background: linear-gradient(180deg, transparent, #2196f3); */
+    background: linear-gradient(180deg, transparent, white);
+
+}
+
+.subheader .header1 .header1-a a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.subheader .header1 .header1-a a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    /* background: linear-gradient(360deg, transparent, #2196f3); */
+    background: linear-gradient(360deg, transparent, white);
+
+}
+
+.subheader .header1 .header1-a a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/* NEON */
+
+
+
+
+.subheader .logo {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: 70%;
+    justify-items: flex-end;
+
+}
+
+.subheader .logo .header-icon {
+    /* border: 1px solid; */
+    width: 23%;
+    font-size: 0.9rem;
+    color: #8b8a8a;
+
+ 
+}
+.subheader .logo .header-icon p{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.subheader .logo .header-icon span{
+    color: white;
+    /* position: absolute; */
+    /* margin: 0 -2rem; */
+}
+.subheader .logo .header-icon .fab{
+    font-size: 1.5rem;
+}
+
+.errow {
+    /* border: 1px solid green; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.a{
+    width: 5rem;
+    height: 5rem;
+    border-radius:50% ;
+    border: 1px solid white;
+    position: absolute;
+    bottom: -4rem;
+    color: white;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 48%;
+    animation: errow 1.3s linear infinite;
+    transition: 1s;
+    
+}
+
+
+
+.a img{
+    width:80%;
+    height:80%;
+    position: relative;
+    top: 0.2rem;
+}
+
+.container .a .fas{
+    position: relative;
+    width: 10%;
+    height: 80%;
+}
+
+@keyframes errow{
+    0%{
+        bottom:-4rem
+    }
+    50%{
+        bottom: 0;
+    }
+    100%{
+        bottom: -4rem;
+    }
+
+}
